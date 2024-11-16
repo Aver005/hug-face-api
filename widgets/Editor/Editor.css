@@ -1,0 +1,84 @@
+.mantine-RichTextEditor-root
+{
+    border: none;
+    border-radius: 0;
+    position: relative; /* Убедитесь, что элемент имеет позиционирование */
+    backdrop-filter: blur(1em); /* Добавляем размытие */
+}
+
+.mantine-RichTextEditor-toolbar
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: var(--mantine-radius-lg);
+    border-bottom-right-radius: var(--mantine-radius-lg);
+}
+
+.mantine-RichTextEditor-content
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 0;
+    border-top-left-radius: var(--mantine-radius-lg);
+    border-top-right-radius: var(--mantine-radius-lg);
+    min-height: 8vh;
+}
+
+.mantine-RichTextEditor-button
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 0;
+}
+
+.mantine-RichTextEditor-control
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: var(--mantine-radius-md);
+    /* padding: var(--mantine-radius-xl); */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.mantine-RichTextEditor-control:hover,
+.mantine-RichTextEditor-control[data-active=true]
+{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mantine-RichTextEditor-controlsGroup
+{  
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: var(--mantine-radius-md);
+    /* padding: var(--mantine-radius-md); */
+}
+
+.mantine-RichTextEditor-controlsGroup button
+{
+    padding: var(--mantine-radius-lg);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mantine-RichTextEditor-toolbar button
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: var(--mantine-radius-md);
+}
+
+@media (max-width: 768px) {
+    .markdown-controls {
+      display: none;
+    }
+    .mobile-controls-toggle {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-controls-toggle {
+      display: none;
+    }
+  }

@@ -1,0 +1,24 @@
+.scroll-area-custom::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    margin-right: -32px; /* Сдвигает полосу прокрутки за пределы блока */
+}
+
+.scroll-area-custom::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-area-custom::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.scroll-area-custom::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Для браузеров, которые не поддерживают WebKit */
+.scroll-area-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
